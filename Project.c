@@ -39,7 +39,7 @@ int main(void)
 
 	int select;
 
-	printf("=====POS=====\n\n");
+	printf("=====S M P C=====\n\n");
 	do
 	{
 		printf("1. People \n2. Order\n3. Order List\n4. Calculate\n5. Day's sales\n6. Quit \n");
