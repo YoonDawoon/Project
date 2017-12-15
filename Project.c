@@ -155,40 +155,55 @@ void order(int i)
 			t[i].pch++;
 			break;
 		case -1:
-			order -= price[0];
-			t[i].pch--;
+			if(t[i].pch>0)
+            {
+                order -= price[0];
+			    t[i].pch--;
+            }
 			break;
 		case 2:
-			order += price[1];
+            order += price[1];
 			t[i].ppo++;
 			break;
 		case -2:
-			order -= price[1];
-			t[i].ppo--;
+			if(t[i].ppo>0)
+            {
+                order -= price[1];
+			    t[i].ppo--;
+            }
 			break;
 		case 3:
 			order += price[2];
 			t[i].pom++;
 			break;
 		case -3:
-			order -= price[2];
-			t[i].pom--;
+			if(t[i].pom>0)
+            {
+                order -= price[2];
+			    t[i].pom--;
+            }
 			break;
 		case 4:
 			order += price[3];
 			t[i].pbe++;
 			break;
 		case -4:
-			order -= price[3];
-			t[i].pbe--;
+			if(t[i].pbe>0)
+            {
+                order -= price[3];
+			    t[i].pbe--;
+            }
 			break;
 		case 5:
 			order += price[4];
 			t[i].pso++;
 			break;
 		case -5:
-			order -= price[4];
-			t[i].pso--;
+			if(t[i].pso>0)
+            {
+                order -= price[4];
+			    t[i].pso--;
+            }
 			break;
 		case 6:
 			break;
